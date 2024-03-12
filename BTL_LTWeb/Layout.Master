@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="BTL_LTWeb.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css-js/main.css">
+        <link rel="stylesheet" href="./assets/css-js/style.css">
+        <link rel="stylesheet" href="./assets/css-login-regitrasion/registration.css">
+        <link rel="stylesheet" href="./assets/css-js/reponsive.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
+        <title>FITHOU | Diễn đàn trao đổi lập trình</title>
+    
+</head>
+<body>
+    <div class="app">
+        <!-- Phần header -->
+        <header class="header">
+            <div class="grid">
+                <!-- Thanh nav -->
+                <nav class="navbar flex">
+                    <div class="navbar__logo">
+                        <img src="./assets/img/Logo-DH-Mo-Ha-Noi-HOU.png" alt="" class="navbar__logo-img" />
+                    </div>
+                    <div class="navbar__option ">
+                     
+                        <ul class="navbar__list flex">
+                            <li class="navbar__item">
+                                <a href="./index.aspx" class="navbar__item-link">
+                                    TRANG CHỦ
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="./index.aspx" class="navbar__item-link">
+                                    HỎI ĐÁP 
+                                </a>
+                            </li><li class="navbar__item" id="taocauhoi" runat="server">
+                               <a href="./login.aspx" class="navbar__item-link">
+                                    TẠO CÂU HỎI
+                                </a>
+                            </li><li class="navbar__item">
+                                <a href="./registration.aspx" class="navbar__item-link">
+                                    ĐĂNG KÝ
+                                </a>
+                            </li><li class="navbar__item">
+                                <a href="./login.aspx" class="navbar__item-link">
+                                    ĐĂNG NHẬP
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__user flex" id="account" runat="server">
+                       
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Banner --> 
+            </div>
+            
+        </header>
+        <!-- phần container nội dung diễn đàn -->
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+       <div>
+           <label>Số lượt truy cập :</label>
+           <span id="slTC" runat="server"></span>
+       </div>
+        <!-- Phần footer -->
+        <footer class="footer">
+            <div class="grid ">
+                <div class="grid__row grid__footer">
+                    <div class="grid__column-3 mt-20">
+                        <div class="footer__address">
+                            <img src="./assets/img/Logo-DH-Mo-Ha-Noi-HOU.png" alt="" class="footer__address-img" />
+                            <h4 class="footer__address-title">Tham khảo những gì chưa biết</h4>
+                        </div>
+                        <h4 class="footer__address-call">Email: 
+                            <a href="mailto:ninestudent@gmail.com" class="footer__address-call">ninestudent@gmail.com</a>
+                        </h4>
+                        <h4 class="footer__address-call">FaceBook: facebook.com</h4>
+                    </div>
+                    <div class="grid__column-3 mt-20">
+                        <h4 class="footer__help-title">Hỗ trợ</h4>
+                        <ul class="footer__helpp">
+                            <li class="footer__help-list">
+                                <a href="#" class="footer__help-linkk">Liên hệ </a>
+                            </li>
+                            <li class="footer__help-list">
+                                <a href="#" class="footer__help-linkk">Bảo mật </a>
+                            </li>
+                            <li class="footer__help-list">
+                                <a href="#" class="footer__help-linkk">Điều khoản </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-3 mt-20">
+                        <h4 class="footer__help-title">Về trang web</h4>
+                        <ul class="footer__helpp">
+                            <li class="footer__help-list footer__infor">
+                                <a href="#" class="footer__help-linkk">Giới thiệu </a>
+                            </li>
+                            <li class="footer__help-list footer__infor">
+                                <a href="#" class="footer__help-linkk">Cơ hội học tập </a>
+                            </li>
+                            <li class="footer__help-list footer__infor">
+                                <a href="#" class="footer__help-linkk">Tham gia nhóm </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-3 mt-20">
+                        <h4 class="footer__help-title">Đơn vị chủ quản</h4>
+                        <div class="footer__helpp">
+                            <p href="#" class="footer__help-name footer__avt">Đại diện: Nhóm 9s</p>
+                            <a href="#" class="footer__help-linkk footer__avt">Bản quyền</a>
+                            <div class="footer__suport">
+                                <a href="">
+                                    <i class="fab fa-facebook-square footer__suport-icon"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fas fa-envelope-square footer__suport-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__row"  >
+                    <p class="develop">© 2022 develop by NguyenVanBinh</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

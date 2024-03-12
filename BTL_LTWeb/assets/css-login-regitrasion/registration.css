@@ -1,0 +1,389 @@
+﻿/* Đăng ký */
+.body {
+    position: relative;
+    margin-top: 50px;
+}
+
+.authentic__form-wrap {
+    max-width: 500px;
+    background-color: #ccc;
+    margin: auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.authentic__form-header {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.authentic__form-heading {
+    font-size: 1.8rem;
+    padding: 15px 0;
+}
+
+.authentic__form--nextPage-login {
+    font-size: 1.6rem;
+    padding: 5px 0 10px 0;
+    text-decoration: none;
+}
+
+    .authentic__form--nextPage-login a {
+        font-size: 1.6rem;
+        padding: 5px 0 10px 0;
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+
+
+.authentic__form-body label {
+    padding: 0 10px;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.authentic__form-body table.auto {
+    table-layout: fixed;
+}
+
+.authentic__form-body input {
+    font-size: 1.5rem;
+    outline: none;
+    padding: 6px 0 6px 8px;
+    margin: 3px;
+    width: 100%;
+}
+
+.authentic__form-footer {
+    margin: 25px 0;
+    text-align: center;
+}
+
+    .authentic__form-footer input {
+        padding: 8px 15px;
+        font-size: 1.5rem;
+        background-color: var(--primary-color);
+        color: #ccc;
+        border: 1px solid var(--primary-color);
+        cursor: pointer;
+    }
+
+.show_password {
+    margin: 20px 160px;
+}
+
+    .show_password .show {
+        width: 20px;
+        margin: 0;
+    }
+
+/* màu viền cho ô input */
+.form-control.valid input {
+    border-color: var(--primary-color);
+    outline-color: var(--primary-color);
+}
+
+.form-control.invalid input {
+    border-color: rgb(235, 58, 58);
+    outline-color: rgb(235, 58, 58);
+}
+
+/*Form quản lý tài khoản*/
+/* chỉnh sửa hồ sơ cá nhân */
+.body {
+    margin-top: 50px;
+}
+
+.info {
+    list-style: none;
+    font-size: 1.6rem;
+    line-height: 24px;
+    border: 1px solid var(--primary-color);
+    padding-top: 18px;
+}
+
+.border {
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 18px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 12px;
+}
+
+    .info a:hover {
+        color: var(--primary-color);
+    }
+
+.info li {
+    padding-bottom: 18px;
+    padding-left: 20px;
+}
+
+/* thông tin cá nhân */
+.table {
+    font-size: 1.6rem;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.thead {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+
+.btn #sua,
+.btn #doimk {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid rgb(13, 116, 3);
+    padding: 8px 18px;
+    font-size: 1.5rem;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+
+#sua {
+    margin-right: 20px;
+}
+
+
+/* Thêm người dùng*/
+.box {
+    border: 1px solid var(--primary-color);
+    margin-top: 30px;
+    font-size: 1.6rem;
+    padding: 8px 8px 0 8px;
+    text-align: center;
+}
+
+.box-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+    .box-wrap label {
+        width: 20%;
+    }
+
+#luu, #sua {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+    padding: 6px 20px;
+    margin: 20px 0;
+}
+
+
+.wide {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /*flex item sẽ có thể bị tách thành hai dòng nếu như tổng chiều rộng của các item lớn hơn chiều rộng của container. */
+    margin-left: -4px;
+    margin-right: -4px;
+}
+/*
+    + c=column-mobile
+    + m = medium - tablet
+    + l = large - PC
+*/
+.col {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+@media (min-width: 1113px) {
+    .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .l-0 {
+        display: none;
+    }
+
+    .l-1,
+    .l-2,
+    .l-3,
+    .l-4,
+    .l-5,
+    .l-6,
+    .l-7,
+    .l-8,
+    .l-9,
+    .l-10,
+    .l-11,
+    .l-12 {
+        display: block;
+    }
+
+
+    .l-1 {
+        flex: 0 0 8.33333%; /*xét chiều ngang hay chiều dọc, phụ thuộc vào thẻ chứa nó là row hay col*/
+        max-width: 8.33333%;
+    }
+
+    .l-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .l-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .l-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .l-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .l-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .l-10 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .l-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+
+    .l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/*dang ki*/
+.content {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.auth {
+    display: block;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+.auth__form {
+    padding: 15px 40px 30px;
+}
+
+.form-control {
+    padding-bottom: 20px;
+    display: flex;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+    .form-control label {
+        display: inline-block;
+        margin-bottom: 5px;
+        width: 45%;
+        font-size: 1.5rem;
+        padding-top: 5px;
+    }
+
+    .form-control input {
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        outline-color: var(--primary-color);
+    }
+
+    .form-control.valid input {
+        border-color: var(--primary-color);
+        outline-color: var(--primary-color);
+    }
+
+    .form-control.invalid input {
+        border-color: #ec3925;
+        outline-color: #ec3925;
+    }
+
+    .form-control.invalid p {
+        visibility: visible;
+        color: #e74c3c;
+    }
+
+    .form-control p {
+        visibility: hidden;
+        position: absolute;
+        bottom: -16px;
+        left: 30%;
+        font-size: 1.4rem;
+    }
+
+.auth_btn {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    color: #ffff;
+    /* display: block; */
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 3px;
+    outline: none;
+}
+
+    .auth_btn:hover {
+        background-color: var(--primary-color);
+    }
+
+.auth:nth-child(2) {
+    display: none;
+}
